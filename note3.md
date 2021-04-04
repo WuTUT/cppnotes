@@ -34,7 +34,7 @@
       }
       ```
       Q:push({1,2}) 和 emplace({1,2}) 的区别
-      A:只知道这是一个{1,2}
+      A:只知道这是一个{1,2},push可以但是emplace不可以      
     3. typename with values
        template<typename T,size_t SIZE>
 4. STL stack
