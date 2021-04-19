@@ -44,4 +44,5 @@
       1. reverse_copy(aList.cbegin(),aList.end(),bList.begin());
          copy(aList.rbegin(),aList.rend(),bList.begin()); // reverse iterator is adapter of forward iterator ,++ -> --,just like its world reverse
 5. Random-Access Iteratos
+
       
