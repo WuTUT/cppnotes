@@ -43,3 +43,21 @@
 3. reverse_iterator 
    1. std::__addressof(non standard C++11) or std::addressof(standard C++)
       use this instead of &operator since &operator can be override; 
+4. stream_iterator 
+   1.
+      ```cpp
+         const char *fname = tmpnam(nullptr); // temp filename
+            if (!fname)
+            return 1;
+         ofstream out(fname, ios::out | ios::in | ios::trunc);
+
+         // output the example sentence into the file
+         out << "Here is a sample sentence for output.\n"
+                  "I hope that you like this sentence out there.";
+         // go to the beginning of the file
+         out.seekp(0);
+       copy(istreambuf_iterator<char>(out.rdbuf()),
+       istreambuf_iterator<char>(),
+       ostream_iterator<char>(cout));
+     
+     ```
