@@ -29,3 +29,8 @@
                 }
             }
            ```
+    4. mem_fun so can apply member function to STL generic algorithm
+    5. tips
+       1. correct copy semantics:deep copy if pass by value
+       2. be small 
+       3. not contain polymorphic elements
